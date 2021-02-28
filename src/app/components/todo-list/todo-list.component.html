@@ -1,0 +1,10 @@
+<p>Login List</p>
+<div>
+  <ol>
+    <app-list-item  Hello [user]="i" *ngFor="let i of users">
+    </app-list-item>
+  </ol>
+</div>
+
+<input [(ngModel)]="newUser">
+<button (click)="addUser()">Save User</button>

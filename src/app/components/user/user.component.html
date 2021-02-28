@@ -1,0 +1,11 @@
+<p>Hello {{user}}</p>
+
+<!--<div>-->
+<!--  <ol>-->
+<!--    <app-user [user]="i" *ngFor="let i of users">-->
+<!--    </app-user>-->
+<!--  </ol>-->
+<!--</div>-->
+
+<input [(ngModel)]="user">
+<button (click)="addUser()">Save User</button>
