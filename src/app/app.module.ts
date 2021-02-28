@@ -7,13 +7,15 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
 import {FormsModule} from "@angular/forms";
 import { ListItemComponent } from './components/list-item/list-item.component';
 import { UserComponent } from './components/user/user.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
     ListItemComponent,
-    UserComponent
+    UserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

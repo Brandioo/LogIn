@@ -1,12 +1,13 @@
 <div>
-  <p>
+  <p align="center">
     Welcome To GONLINE
+    {{ title }}
   </p>
 </div>
 
-{{ title }}
-<br>
-{{ myName }}
+
+<!--<br>-->
+<!--{{ myName }}-->
 
 <!--<app-todo-list>-->
 
@@ -16,22 +17,37 @@
 
 <!--</app-user>-->
 
+<nav *ngIf="backendService.isLoggedIn">
+  <div class="container">
+    <ul class="nav navbar-nav" routerLinkActive="active">
+      <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="todo">To Do List</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="user">User Profile</a></li>
+      <li class="nav-item" (click)=logOut()>Log Out</li>
+    </ul>
+  </div>
+</nav>
+
 <router-outlet>
 
 </router-outlet>
-{{dateObj | date:'medium'}}
-<div align="center">
-  <form #f="ngForm" (ngSubmit)="onAddForm(f)">
-    <input type="text" ngModel name="username" required>
-    <input type="password" ngModel name="password" required>
-    <button type="submit">Add</button>
-  </form>
-</div>
 
-<div align="center" *ngIf="user && password">
-  <br>
-  Hello {{user}}
-  <app-todo-list>
+<div class="center">{{dateObj | date:'medium'}}</div>
 
-  </app-todo-list>
-</div>
+<br>
+
+<app-login *ngIf="!backendService.isLoggedIn"></app-login>
+
+
+<!--<div align="center">-->
+<!--  <a routerLink="todo">To Do</a>-->
+<!--</div>-->
+
+
+<!--<div align="center" *ngIf="user && password">-->
+<!--  <br>-->
+<!--  Hello {{user}}-->
+<!--&lt;!&ndash;  <app-todo-list>&ndash;&gt;-->
+
+<!--&lt;!&ndash;  </app-todo-list>&ndash;&gt;-->
+<!--</div>-->

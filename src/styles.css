@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+button {
+  padding: 7px;
+  background-color: #2020b9;
+  color: white;
+  border-radius: 5px;
+}
+
+.border{
+  margin: auto;
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 5px 10px teal;
+  width: 180px;
+}

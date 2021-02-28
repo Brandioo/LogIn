@@ -1,14 +1,16 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BackendService {
+  isLoggedIn=false;
 
-  toDoUsers=[
+  toDoUsers = [
     'Brand',
     'Xhoi'
   ];
-  
-  constructor() { }
+
+  constructor() {
+  }
 }

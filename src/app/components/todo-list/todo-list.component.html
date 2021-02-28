@@ -1,10 +1,15 @@
-<p>Login List</p>
-<div>
+<p>GONLINE Login List</p>
+
+<div class="center">
   <ol>
-    <app-list-item  Hello [user]="i" *ngFor="let i of users">
+    <app-list-item  [user]="i" *ngFor="let i of users">
     </app-list-item>
   </ol>
 </div>
 
-<input [(ngModel)]="newUser">
-<button (click)="addUser()">Save User</button>
+<div class="center addUser">
+  <input  [(ngModel)]="newUser">
+  <br>
+  <button (click)="addUser()">Save User</button>
+</div>
+
