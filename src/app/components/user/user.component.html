@@ -1,5 +1,3 @@
-<p>Hello {{user}}</p>
-
 <!--<div>-->
 <!--  <ol>-->
 <!--    <app-user [user]="i" *ngFor="let i of users">-->
@@ -7,5 +5,63 @@
 <!--  </ol>-->
 <!--</div>-->
 
-<input [(ngModel)]="user">
-<button (click)="addUser()">Save User</button>
+<!--<link rel="stylesheet" href="./theme">;-->
+
+
+<div class="center" *ngFor="let i of usersList">
+  Hello {{i}}
+</div>
+
+<div class="center">
+  <input [(ngModel)]="user">
+  <button (click)="addUser()">Save User</button>
+</div>
+
+<body>
+
+<form class="registerCenter" method="post" action="./server.php">
+<!--  <fieldset>-->
+<!--    <legend> Register:</legend>-->
+    <label for="firstName">First Name-</label>
+    <br>
+    <input id="firstName" type="text" name="firstName" required>
+    <br>
+    <br>
+    <label for="lastName">Last Name-</label>
+    <input id="lastName" type="text" name="lastName" required>
+<!--    <br>-->
+<!--    <br>-->
+<!--    <label for="email">Email-</label>-->
+<!--    <input id="email" type="email" name="email" placeholder="test@example.com" pattern="[a-zA-Z0-9]+@epoka.edu.al"-->
+<!--           required>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <label for="birthDate">Birth Day-</label>-->
+<!--    <input id="birthDate" type="date" name="birthDate" required>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <label for="engagement">Engagement-</label>-->
+<!--    <select id="engagement" name="engagement" required>-->
+<!--      <option value="student">Student</option>-->
+<!--      <option value="lecturer">Lecturer</option>-->
+<!--    </select>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <label for="avatar">Avatar-</label>-->
+<!--    <input id="avatar" type="file" name="avatarSrc" required>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <label for="year">Year-</label>-->
+<!--    <input id="year" type="number" name="year" required>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <label for="password">Password-</label>-->
+<!--    <input id="password" type="password" name="password" required>-->
+<!--    <br>-->
+<!--    <br>-->
+    <input type="submit" value="Register">
+    <button type="reset" value="Reset">Reset</button>
+<!--  </fieldset>-->
+</form>
+
+</body>

@@ -1,0 +1,34 @@
+{
+  "todoitems": [
+    {
+      "title": "Brand",
+      "description": "Citozi",
+      "id": 1
+    },
+    {
+      "title": "Xho",
+      "description": "Brraaa",
+      "id": 2
+    },
+    {
+      "title": "Nia",
+      "description": "Good",
+      "id": 3
+    },
+    {
+      "title": "Okay",
+      "description": "Reset",
+      "id": 4
+    },
+    {
+      "title": "Armando",
+      "description": "Bossi",
+      "id": 5
+    },
+    {
+      "title": "Hysnije",
+      "description": "Agalliu",
+      "id": 6
+    }
+  ]
+}

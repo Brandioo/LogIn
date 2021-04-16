@@ -7,9 +7,8 @@ import {BackendService} from "../../service/backend.service";
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-
-  @Input() user='';
-
+  user = '';
+  usersList=[];
   users=this.backendService.toDoUsers;
 
   isShown=true;
@@ -21,7 +20,8 @@ export class UserComponent implements OnInit {
   }
 
   addUser() {
-    this.backendService.toDoUsers.push(this.user);
+    // @ts-ignore
+    this.usersList.push(this.user)
   }
 
 }

@@ -1,3 +1,22 @@
-p{
+p, .center{
   text-align: center;
 }
+
+
+.registerCenter{
+  text-align: center;
+}
+
+label {
+  color: #570cbf;
+}
+
+input {
+  /*border: 3px solid indigo;*/
+  /*padding: 12px 8px;*/
+  /*color: rgba(255, 99, 71, 0.8);*/
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
