@@ -1,3 +1,7 @@
 $primary: teal;
 $secondary: lightgray;
 $warn: tomato;
+
+@mixin elevate($color, $elevate){
+  box-shadow: 0 $elevate +px $elevate + 5 +px +' '-$elevate +px rgba(color, ($elevate * 4)/100) ;
+}

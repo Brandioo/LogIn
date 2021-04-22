@@ -1,0 +1,54 @@
+@import "./theme";
+
+.header{
+  background-color: $secondary;
+  color: $primary;
+}
+.navigation{
+  justify-content: flex-end;
+  background-color: $secondary;
+}
+
+.navigation a{
+  padding: 12px 8px;
+  color: $primary;
+}
+
+.navigation a:hover{
+  background-color: #0aa9e7;
+  color: $secondary;
+}
+
+.content{
+  padding: 15px;
+}
+
+.content .col{
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.content .col:not(:last-child){
+  margin-right: 8px;
+}
+
+.input-primary{
+  padding: 8px;
+
+}
+
+input:invalid{
+  border: 2px solid $warn;
+}
+
+
+.btn-primary{}
+.btn-warning{}
+
+.elevate-5{
+  @include elevate(black,10)
+}
+
+.elevate-10{
+  box-shadow: 0 20px 25px -15px rgba(0,0,0,.4);
+}

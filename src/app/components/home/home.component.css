@@ -1,0 +1,27 @@
+p{
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  align: center;
+  background-color: #00d9c6;
+}
+
+/* Style the topnav links */
+.topnav a {
+  /*float: left;*/
+  align: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-image: url(https://i.pinimg.com/originals/ff/46/3f/ff463f7a1f926bbde7d50f05b546a0ef.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+}
