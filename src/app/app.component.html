@@ -5,6 +5,8 @@
 
 <!--  <p>Resize the browser window to see the responsive effect.</p>-->
 
+
+
   <div class="header">
     <p align="center">
       <font face="courier" size="50" >
@@ -29,13 +31,15 @@
 
   <nav *ngIf="backendService.isLoggedIn">
     <div class="container">
+      <font face="Times" size="5" >
       <ul class="nav navbar-nav" routerLinkActive="active">
-        <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="todo">To Do List</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="user">User Profile</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="listitem">List Item</a></li>
-        <li class="nav-item" (click)=logOut()>Log Out</li>
+        <li class="nav-item"><a class="nav-link" routerLink="home"> Home |</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="todo">| To Do List |</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="user">| User Profile |</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="listitem">| List Item |</a></li>
+        <li class="nav-item" (click)=logOut()>| Log Out</li>
       </ul>
+      </font>
     </div>
   </nav>
 
@@ -55,42 +59,19 @@
 
 
 
-  <div class="card">
-    <audio controls="">
-      <source src="/assets/anotherlove.mp3" type="audio/mp3">
-    </audio>
+<!--  <div class="card">-->
+<!--    <audio controls="">-->
+<!--      <source src="/assets/anotherlove.mp3" type="audio/mp3">-->
+<!--    </audio>-->
 
-    <audio controls="">
-      <source src="/assets/anotherlove.mp3" type="audio/mp3">
-    </audio>
-  </div>
-
-
-  <marquee>
-
-    <img src="/assets/kkk.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/super.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/letssee.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/okay.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/male.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo12.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/haha.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo1.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo3.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo4.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo6.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo7.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo8.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo9.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo14.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo17.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-    <img src="/assets/photo19.jpeg" alt="HTML5 Icon" [hspace]="50" [vspace]="50" [width]="268" [height]="400" [border]="5">
-
-  </marquee>
+<!--    <audio controls="">-->
+<!--      <source src="/assets/anotherlove.mp3" type="audio/mp3">-->
+<!--    </audio>-->
+<!--  </div>-->
 </div>
 
 
-
+<br>
 
 
   <style>
@@ -116,12 +97,14 @@
 
 
 
-<p>
-  <font face="courier" size="30" >
-    Happy Easter!</font></p>
+<!--<p>-->
+<!--  <font face="courier" size="30" >-->
+<!--    Happy Easter!</font></p>-->
 
 <div align="center">
-
+  <p>
+    <font face="courier" size="30" >
+      Happy Easter!</font></p>
 
   <img [border]="5" alt="Picture1" src="assets/easter_0.png" [hspace]="70" [vspace]="70" [width]="108" [height]="105">
   <img [border]="5" alt="Picture2" src="assets/easter_1.png" [hspace]="70" [vspace]="70" [width]="108" [height]="105">
@@ -135,27 +118,6 @@
 <!--<marquee class="good">-->
 <!--  <font face="courier" size="10" >Happy Easter-->
 <!--  </font></marquee>-->
-
-<div class="row">
-  <div class="column" >
-
-
-  <video [width]="320" [height]="240" controls muted style="padding: 60px" align="left">
-    <source src="/assets/SearchEngineVideo.mp4">
-  </video>
-
-
-  <video [width]="320" [height]="240" controls muted style="padding: 140px"  align="center">
-    <source src="/assets/gonnn.mp4">
-  </video>
-
-
-  <video [width]="320" [height]="240" controls muted style="padding: 60px"  align="right">
-    <source src="/assets/Tech-Application.mp4">
-  </video>
-
-</div>
-</div>
 <!--<font face="Verdana" [size]="2">-->
 <!--  <div align="center">-->
 <!--    <h2 style="color:rebeccapurple" align="center"> <a href="http://www.gonlinepro.com">GONLINE</a></h2>-->
@@ -164,6 +126,12 @@
 <!--</font>-->
 
 
+<div class="centerButton1">
+
+  <button class="nav-item"><a class="nav-link1" routerLink="client">Client Register</a></button>
+</div>
+
+<li class="nav-item"><a class="nav-link" routerLink="shop">| Shop Online |</a></li>
 
 
 <div class="footer">
@@ -175,4 +143,8 @@
     </font>
   </p>
 </div>
+
+
+
+
 </body>

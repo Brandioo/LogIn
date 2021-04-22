@@ -20,48 +20,42 @@
 <body>
 
 <form class="registerCenter" method="post" action="./server.php">
-<!--  <fieldset>-->
-<!--    <legend> Register:</legend>-->
-    <label for="firstName">First Name-</label>
-    <br>
-    <input id="firstName" type="text" name="firstName" required>
-    <br>
-    <br>
-    <label for="lastName">Last Name-</label>
-    <input id="lastName" type="text" name="lastName" required>
-<!--    <br>-->
-<!--    <br>-->
-<!--    <label for="email">Email-</label>-->
-<!--    <input id="email" type="email" name="email" placeholder="test@example.com" pattern="[a-zA-Z0-9]+@epoka.edu.al"-->
-<!--           required>-->
-<!--    <br>-->
-<!--    <br>-->
-<!--    <label for="birthDate">Birth Day-</label>-->
-<!--    <input id="birthDate" type="date" name="birthDate" required>-->
-<!--    <br>-->
-<!--    <br>-->
-<!--    <label for="engagement">Engagement-</label>-->
-<!--    <select id="engagement" name="engagement" required>-->
-<!--      <option value="student">Student</option>-->
-<!--      <option value="lecturer">Lecturer</option>-->
-<!--    </select>-->
-<!--    <br>-->
-<!--    <br>-->
-<!--    <label for="avatar">Avatar-</label>-->
-<!--    <input id="avatar" type="file" name="avatarSrc" required>-->
-<!--    <br>-->
-<!--    <br>-->
-<!--    <label for="year">Year-</label>-->
-<!--    <input id="year" type="number" name="year" required>-->
-<!--    <br>-->
-<!--    <br>-->
-<!--    <label for="password">Password-</label>-->
-<!--    <input id="password" type="password" name="password" required>-->
-<!--    <br>-->
-<!--    <br>-->
-    <input type="submit" value="Register">
-    <button type="reset" value="Reset">Reset</button>
-<!--  </fieldset>-->
+  <!--  <fieldset>-->
+  <!--    <legend> Register:</legend>-->
+  <br>
+  <input id="firstName" ngModel placeholder="UserName" type="text" name="firstName" required>
+  <br>
+  <br>
+  <input id="lastName" ngModel placeholder="LastName" type="text" name="lastName" required>
+  <br>
+  <br>
+  <label for="email">Email-</label>
+  <input id="email" type="email" name="email" placeholder="test@example.com" pattern="[a-zA-Z0-9]+@epoka.edu.al"
+         required>
+  <br>
+  <br>
+  <input id="birthDate" type="date" placeholder="BirthDate" name="birthDate" required>
+  <br>
+  <br>
+  <select id="engagement" name="engagement" placeholder="Engagement" required>
+    <option value="student">Student</option>
+    <option value="lecturer">Lecturer</option>
+  </select>
+  <br>
+  <br>
+  <label for="Avatar">Avatar-</label>
+  <input id="avatar" type="file" placeholder="Avatar" name="avatarSrc" required>
+  <br>
+  <br>
+  <input id="year" type="number" placeholder="Year" name="year" required>
+  <br>
+  <br>
+  <input id="password" type="password" placeholder="Password" name="password" required>
+  <br>
+  <br>
+  <button type="submit">Register</button>
+  <button type="reset" value="Reset">Reset</button>
+  <!--  </fieldset>-->
 </form>
 
 </body>

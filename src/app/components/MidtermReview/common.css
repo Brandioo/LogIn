@@ -1,0 +1,13 @@
+.row{
+  display: flex;
+}
+.col{
+  padding: 0 15px;
+  flex-grow: 1;
+}
+
+.btn{
+  padding: 8px 12px;
+  border-radius: 4px;
+
+}
