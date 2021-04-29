@@ -1,24 +1,46 @@
-<p><a href="http://www.gonlinepro.com">GONLINE</a> Login List</p>
+<!--<p><a href="http://www.gonlinepro.com">GONLINE</a> Login List</p>-->
 
-<div class="center">
-  <ol>
-    <app-list-item [user]="i" *ngFor="let i of users">
-    </app-list-item>
-  </ol>
+<!--<div class="center">-->
+<!--  <ol>-->
+<!--    <app-list-item [user]="i" *ngFor="let i of users">-->
+<!--    </app-list-item>-->
+<!--  </ol>-->
 
-  <form align="center" #f="ngForm" (ngSubmit)="addUser(f)">
-    <input type="text" ngModel name="title" required>
-    <br>
-    <br>
-    <input type="text" ngModel name="description" required>
-    <br>
-    <button type="submit">LogIn</button>
+<!--  <form align="center" #f="ngForm" (ngSubmit)="addUser(f)">-->
+<!--    <input type="text" ngModel name="title" required>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <input type="text" ngModel name="description" required>-->
+<!--    <br>-->
+<!--    <button type="submit">LogIn</button>-->
 
-  </form>
+<!--  </form>-->
 
-  <br>
+<!--  <br>-->
 
 
+<!--</div>-->
+
+
+<div class="row">
+  <div class="column">
+
+
+    <video [width]="320" [height]="240" controls muted style="padding: 60px" align="left">
+      <source src="/assets/SearchEngineVideo.mp4">
+    </video>
+
+
+    <video [width]="320" [height]="240" controls muted style="padding: 140px" align="center">
+      <source src="/assets/gonnn.mp4">
+    </video>
+
+
+    <video [width]="320" [height]="240" controls muted style="padding: 60px" align="right">
+      <source src="/assets/Tech-Application.mp4">
+    </video>
+
+  </div>
 </div>
 
 

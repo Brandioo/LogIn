@@ -8,6 +8,7 @@
 <!--<link rel="stylesheet" href="./theme">;-->
 
 
+
 <div class="center" *ngFor="let i of usersList">
   Hello {{i}}
 </div>
@@ -17,45 +18,50 @@
   <button (click)="addUser()">Save User</button>
 </div>
 
-<body>
 
-<form class="registerCenter" method="post" action="./server.php">
-  <!--  <fieldset>-->
-  <!--    <legend> Register:</legend>-->
-  <br>
-  <input id="firstName" ngModel placeholder="UserName" type="text" name="firstName" required>
-  <br>
-  <br>
-  <input id="lastName" ngModel placeholder="LastName" type="text" name="lastName" required>
-  <br>
-  <br>
-  <label for="email">Email-</label>
-  <input id="email" type="email" name="email" placeholder="test@example.com" pattern="[a-zA-Z0-9]+@epoka.edu.al"
-         required>
-  <br>
-  <br>
-  <input id="birthDate" type="date" placeholder="BirthDate" name="birthDate" required>
-  <br>
-  <br>
-  <select id="engagement" name="engagement" placeholder="Engagement" required>
-    <option value="student">Student</option>
-    <option value="lecturer">Lecturer</option>
-  </select>
-  <br>
-  <br>
-  <label for="Avatar">Avatar-</label>
-  <input id="avatar" type="file" placeholder="Avatar" name="avatarSrc" required>
-  <br>
-  <br>
-  <input id="year" type="number" placeholder="Year" name="year" required>
-  <br>
-  <br>
-  <input id="password" type="password" placeholder="Password" name="password" required>
-  <br>
-  <br>
-  <button type="submit">Register</button>
-  <button type="reset" value="Reset">Reset</button>
-  <!--  </fieldset>-->
-</form>
+<audio align="center" controls="">
+  <source src="/assets/anotherlove.mp3" type="audio/mp3">
+</audio>
 
-</body>
+<!--<body>-->
+
+<!--<form class="registerCenter" method="post" action="./server.php">-->
+<!--  &lt;!&ndash;  <fieldset>&ndash;&gt;-->
+<!--  &lt;!&ndash;    <legend> Register:</legend>&ndash;&gt;-->
+<!--  <br>-->
+<!--  <input id="firstName" ngModel placeholder="UserName" type="text" name="firstName" required>-->
+<!--  <br>-->
+<!--  <br>-->
+<!--  <input id="lastName" ngModel placeholder="LastName" type="text" name="lastName" required>-->
+<!--  <br>-->
+<!--  <br>-->
+<!--  <label for="email">Email-</label>-->
+<!--  <input id="email" type="email" name="email" placeholder="test@example.com" pattern="[a-zA-Z0-9]+@epoka.edu.al"-->
+<!--         required>-->
+<!--  <br>-->
+<!--  <br>-->
+<!--  <input id="birthDate" type="date" placeholder="BirthDate" name="birthDate" required>-->
+<!--  <br>-->
+<!--  <br>-->
+<!--  <select id="engagement" name="engagement" placeholder="Engagement" required>-->
+<!--    <option value="student">Student</option>-->
+<!--    <option value="lecturer">Lecturer</option>-->
+<!--  </select>-->
+<!--  <br>-->
+<!--  <br>-->
+<!--  <label for="Avatar">Avatar-</label>-->
+<!--  <input id="avatar" type="file" placeholder="Avatar" name="avatarSrc" required>-->
+<!--  <br>-->
+<!--  <br>-->
+<!--  <input id="year" type="number" placeholder="Year" name="year" required>-->
+<!--  <br>-->
+<!--  <br>-->
+<!--  <input id="password" type="password" placeholder="Password" name="password" required>-->
+<!--  <br>-->
+<!--  <br>-->
+<!--  <button type="submit">Register</button>-->
+<!--  <button type="reset" value="Reset">Reset</button>-->
+<!--  &lt;!&ndash;  </fieldset>&ndash;&gt;-->
+<!--</form>-->
+
+<!--</body>-->
