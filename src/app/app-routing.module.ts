@@ -7,6 +7,7 @@ import {HomeComponent} from "./components/home/home.component";
 import {ShopOnlineComponent} from "./components/shop/ShopOnline.component";
 import {ListItemComponent} from "./components/list-item/list-item.component";
 import {ClientComponent} from "./components/client/client.component";
+import {NikeComponent} from './components/nike/nike.component';
 
 const routes: Routes = [
   {path: 'todo', component: TodoListComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'listitem', component: ListItemComponent},
   {path: 'client', component: ClientComponent},
   {path: 'shop', component: ShopOnlineComponent},
-  {path: 'main', component: AppComponent}
+  {path: 'main', component: AppComponent},
+  {path: 'nike', component: NikeComponent}
 ];
 
 @NgModule({

@@ -11,11 +11,13 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { ClientComponent } from './components/client/client.component';
 import { ShopOnlineComponent } from './components/shop/ShopOnline.component';
+import {NikeComponent} from './components/nike/nike.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatChipsModule} from "@angular/material/chips";
+
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import {MatChipsModule} from "@angular/material/chips";
     HomeComponent,
     ClientComponent,
     ShopOnlineComponent,
+    NikeComponent,
     DialogContentExampleDialog
   ],
   imports: [
