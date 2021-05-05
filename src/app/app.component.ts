@@ -44,14 +44,6 @@ export class AppComponent implements OnInit {
   }
 
 
-  // openDialog2() {
-  //   const dialogRef = this.dialog.open(NikeContentExampleDialog);
-  //
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     console.log(`Dialog result: ${result}`);
-  //   });
-  // }
-
 }
 
 @Component({
@@ -60,11 +52,6 @@ export class AppComponent implements OnInit {
 })
 export class DialogContentExampleDialog {}
 
-// @Component({
-//   selector: 'nike.component',
-//   templateUrl: 'nike.component.html',
-// })
-// export class NikeContentExampleDialog {}
 
 
 

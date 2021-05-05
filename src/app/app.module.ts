@@ -30,7 +30,7 @@ import {MatChipsModule} from "@angular/material/chips";
     ClientComponent,
     ShopOnlineComponent,
     NikeComponent,
-    DialogContentExampleDialog
+    DialogContentExampleDialog,
   ],
   imports: [
     BrowserModule,
